@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+
+body {
+    background: linear-gradient(270deg, #DF8908 10%, #ff1d15 100%);
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.4s ease;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0.1rem 7%;
+    background: whitesmoke;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+#menu-icon {
+    font-size: 3.5rem;
+    color: #ff1d15;
+    display: none;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+span {
+    background: linear-gradient(270deg, #DF8908 10%, #ff1d15 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar a {
+    font-size: 1.4rem;
+    color: black;
+    margin-left: 5rem;
+    font-family: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+    color: rgba(141, 20, 41, 0.836);
+    transform: scale(1.05);
+
+}
+
+.gradient-btn {
+    margin-left: 50px;
+    font-size: 1.5rem;
+    width: 15rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background: linear-gradient(270deg, #DF8908 10%, #ff1d15 100%);
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+    border: none;
+    text-wrap: nowrap;
+}
+
+.gradient-btn a {
+    color: white;
+    margin-left: 1px;
+}
+
+.gradient-btn:hover {
+    transform: scale(1.05);
+}
+
+
+body.dark-mode {
+    background-image: none;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.toggle-button {
+    position: relative;
+    width: 70px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.toggle-button:hover {
+    background-color: #b3b3b3;
+}
+
+.toggle-slider {
+    top: 3px;
+    left: 3px;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+body.dark-mode .toggle-slider {
+    transform: translateX(36px);
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 10rem 1%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#slider,
+.slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+#slider figure,
+.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img,
+.slider figure img {
+    float: left;
+    width: 20%;
+    height: auto;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+.section {
+    line-height: 50px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.img1 {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.images {
+    /* margin-top: 40px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+#logo2 {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+#motto {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 0.6em;
+    background-color: rgb(50, 47, 47);
+    color: white;
+    position: relative;
+    bottom: 0;
+}
+
+.call1,
+.whatsapplink1 {
+    text-decoration: none;
+    color: white;
+}
+
+#banner {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    word-spacing: 25px;
+}
+
+#socials {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#ban {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    word-spacing: 50px;
+}
+
+
+@media(max-width:1285px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .header {
+        padding: 0.1rem 7%;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    section {
+    min-height: 100vh;
+    padding: 7rem 1%;
+}
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 70%;
+        padding: 1rem 3rem;
+        background: rgba(0, 0, 0, 0.8);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid;
+        border-bottom: 2px solid;
+        display: none;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin-left: -30px;
+        color: rgb(241, 73, 12);
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .gradient-btn {
+        position: relative;
+        right: 80px;
+        width: 7rem;
+        height: 1rem;
+    }
+
+    .gradient-btn a {
+        position: relative;
+        color: white;
+        bottom: 9px;
+        right: -5px;
+        font-size: 12px;
+    }
+
+    .toggle-button {
+        width: 50px;
+        height: 30px;
+    }
+
+}
